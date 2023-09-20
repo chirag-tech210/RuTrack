@@ -31,7 +31,7 @@ function Login() {
 
     try {
   const res = await axios.post(
-    "http://localhost:3000/user/login",
+    "https://course-selling-website-six.vercel.app/user/login",
     {},
     { headers }
   );

@@ -31,7 +31,7 @@ function register() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/user/signup",
+        "https://course-selling-website-six.vercel.app/user/signup",
         newUser
       );
 

@@ -39,7 +39,7 @@ function Courses() {
     };
     try {
       const res = await axios.post(
-        "http://localhost:3000/user/purchase/" + courseId,
+        "https://course-selling-website-six.vercel.app/user/purchase/" + courseId,
         {},
         { headers }
       );
@@ -56,7 +56,7 @@ function Courses() {
     };
     console.log("Bearer " + localStorage.getItem("token"));
     try {
-      const res = await axios.get("http://localhost:3000/user/courses", {
+      const res = await axios.get("https://course-selling-website-six.vercel.app/user/courses", {
         headers,
       });
       setCourses(res.data.courses);

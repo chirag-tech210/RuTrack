@@ -20,7 +20,7 @@ export default function MeMediaCard() {
       "Content-Type": "application/json",
     };
     try{
-      const res = await axios.get("http://localhost:3000/user/me",{headers});
+      const res = await axios.get("https://course-selling-website-six.vercel.app/user/me",{headers});
       setUsername(res.data);
     }
     catch(error){

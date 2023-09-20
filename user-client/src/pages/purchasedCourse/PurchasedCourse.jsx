@@ -17,7 +17,7 @@ function PurchasedCourse() {
         };
 
         const res = await axios.get(
-          "http://localhost:3000/user/purchasedCourses",
+          "https://course-selling-website-six.vercel.app/user/purchasedCourses",
           {
             headers,
           }

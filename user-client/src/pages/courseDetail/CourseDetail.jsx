@@ -36,7 +36,7 @@ function CourseDetail() {
 
     try {
       const res = await axios.get(
-        "http://localhost:3000/user/courses/" + courseId.courseId,
+        "https://course-selling-website-six.vercel.app/user/courses/" + courseId.courseId,
         { headers }
       );
       setCourses(res.data);
