@@ -37,7 +37,7 @@ function Edit() {
     }
     
     try{
-      const res = await axios.put("http://localhost:3000/admin/courses/"+courseId.courseId,newCourse,{headers})
+      const res = await axios.put("https://course-selling-website-six.vercel.app/admin/courses/"+courseId.courseId,newCourse,{headers})
       console.log(res.data);
       getCourse();
     }catch(error){
@@ -62,7 +62,7 @@ function Edit() {
     };
     try {
       const res = await axios.get(
-        "http://localhost:3000/admin/courses/" + courseId.courseId,
+        "https://course-selling-website-six.vercel.app/admin/courses/" + courseId.courseId,
         { headers }
       );
       setPublished(res.data.published);

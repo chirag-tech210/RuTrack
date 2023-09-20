@@ -31,7 +31,7 @@ function CreateCourse() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/admin/courses",
+        "https://course-selling-website-six.vercel.app/admin/courses",
         body,
         { headers }
       );

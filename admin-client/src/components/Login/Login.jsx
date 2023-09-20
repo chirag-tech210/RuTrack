@@ -29,7 +29,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/admin/login",
+        "https://course-selling-website-six.vercel.app/admin/login",
         {},
         { headers }
       );

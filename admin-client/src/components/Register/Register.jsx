@@ -30,7 +30,7 @@ const Register = () => {
     };
     try {
       const response = await axios.post(
-        "http://localhost:3000/admin/signup",
+        "https://course-selling-website-six.vercel.app/admin/signup",
         user
       );
       if(response.status===200){

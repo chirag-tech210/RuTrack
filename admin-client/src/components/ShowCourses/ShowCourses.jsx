@@ -16,7 +16,7 @@ function ShowCourses() {
       "Content-Type": "application/json",
     };
     try {
-      const res = await axios.get("http://localhost:3000/admin/courses", {
+      const res = await axios.get("https://course-selling-website-six.vercel.app/admin/courses", {
         headers,
       });
       setCourses(res.data.courses);
@@ -42,7 +42,7 @@ function ShowCourses() {
     };
     try {
       const res = await axios.delete(
-        `http://localhost:3000/admin/courses/${courseId}`,
+        `https://course-selling-website-six.vercel.app/admin/courses/${courseId}`,
         {
           headers,
         }
