@@ -1,0 +1,37 @@
+.courseShow{
+    background-image: url("https://source.unsplash.com/random");
+    height: 200px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin-top: 250px;
+    margin-left: 200px;
+    margin-right: 2%;
+}
+
+.about{
+    margin-left: 0px;
+    margin-top: 320px;
+    margin-right: 25px;
+    width: 800px;
+    position: absolute;
+    
+}
+
+@media screen and (max-width:768px){
+    .card{
+        position: absolute;
+        margin-top: 350px;
+        margin-left: 0px;
+        margin-right: auto;
+    }
+    .about{
+        margin-left: auto;
+        margin-top: 820px;
+        margin-right:auto;
+        max-width: 100px;
+    }
+}
